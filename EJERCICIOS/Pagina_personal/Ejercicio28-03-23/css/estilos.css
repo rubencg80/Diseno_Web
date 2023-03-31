@@ -1,0 +1,131 @@
+*{ /*Se usa un asterísco para seleccionar todo el documento*/
+  margin: 0; /*Se delcara un margin de 0 a todos los elementos del documento*/
+  padding: 0;  /*Se delcara un padding de 0 a todos los elementos del documento*/
+  font-family: 'Roboto', sans-serif; /*Se escoge la fuente para todo el documento*/
+}
+
+header
+{
+    width: 100%; /*Usar un porcentaje de la pantalla de manera horizontal*/
+    height: 100vh; /*Usar una cantidad de tamaño de manera vertical en la pantalla*/
+    background: linear-gradient(rgb(255, 80, 80), rgb(80, 80, 80),rgb(168, 168, 168),rgb(255, 255, 255)); /*Para poner un fondo*/
+}
+
+nav{
+    display:flex; /*Separa los elementos que contenga, se acompaña de las siguientes dos etiquetas*/
+    justify-content: space-around; /*Alineación horizontal*/
+    align-items: flex-start; /*Alineación vertical*/
+    height: 30vh; /*Es la cantidad de pantalla que usará verticalmente*/
+    }
+
+nav p{
+    color: rgb(0, 0, 0); /*Cambia el color del texto seleccionado*/
+    font-size: 25px; /*Cambia el tamaño del texto*/
+    text-align: left; /*Cambia la alineación del texto*/
+    letter-spacing: 5px; /*Distancia entre letras*/
+    word-spacing: 5px; /*Distancia entre palabras*/
+    text-shadow: 5px 5px 5px black; /*Sombra de texto, vertical, horizontal, intensidad, color*/
+    font-weight: bold; /*Negrita del texto*/
+}
+
+.logo{
+        display:flex; /*Separa los elementos que contenga, se acompaña de las siguientes dos etiquetas*/
+        justify-content: left; /*Alineación horizontal*/
+        align-items: center; /*Alineación vertical*/
+}
+.logo img{
+    width: 10%; /*Hace que el logo sólo ocupe el 10% de tamaño de su sección*/
+    }
+
+ul{
+        display:flex; /*Centra las etiquetas de la lista*/
+}
+
+li{
+        margin: 30px; /*Pixeles de separación entre los elementos de la lista*/
+        list-style-type: none; /*Quita los puntos por default de la lista*/
+}
+
+a{
+    text-decoration: none; /*Elimina el subrayado de las palabras en la etiqueta a*/
+    color: rgb(255, 0, 0); /*Elección del color de la fuente*/
+    border: solid 1px rgb(0, 0, 0); /*Elección del borde del recuadro*/
+    background-color: rgb(71, 71, 71); /*Color del fondo del recuadro*/
+    padding: 10px; /*Espacio entre el contenido y el borde*/
+    border-radius: 20px; /*Redondeado de los bordes de los recuadros*/
+}   
+
+a:hover{ /*Añade las siguientes funciones cuando el cursor pasa por encima del elemento*/
+    color: rgb(60, 255, 0);/*Elección del color de la fuente*/
+    background-color: rgb(71, 71, 71); /*Color del fondo del recuadro*/
+    font-size: 20px;
+    padding: 17px;
+}
+
+/* Termina la barra de navegación */
+
+.caja{
+    display: flex; /*Centra los elementos de caja, en este caso, ambas "cajitas" */
+    justify-content: column; /*Alinea los elementos de forma horizontal*/
+    align-items: center; /*Alinea los elementos de manera vertical*/
+    height: 70vh; /*Determina el espacio que ocupará*/
+}
+
+.cajita{
+    width: 50%; /*Determina el espacio que ocupará dentro de caja*/
+    text-align: center; /*Alinea el contenido de cajita*/
+}
+
+.cajita h1{
+    font-size: 4em;
+}
+
+.cajita p{
+    margin-bottom: 30px;
+}
+
+.cajita img{
+    width: 100%;
+}
+
+span{
+    color: rgb(250, 75, 75);
+}
+
+.acerca{
+    width: 100%;
+    height: 80vh;
+    background: url(../img/editar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.acerca h2{
+    font-size: 4em;
+    text-align: center;
+}
+
+.acercade1{
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.acercade2{
+    width: 50%;
+    height: 50vh;
+    background: linear-gradient(to right,rgba(245, 12, 12, 0.5),  rgba(128, 128, 128, 0.473));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/*Pseudoclase: hover Es el que cambia el estilo predeterminado de un elemento cuando pase algo, se reconoce como un evento*/
+
